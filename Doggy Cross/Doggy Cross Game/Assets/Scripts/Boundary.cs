@@ -13,11 +13,11 @@ public class Boundary : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.z >= 47)
+        if(transform.position.z >= 57)
         {
             transform.position = new Vector3(36, transform.position.y, transform.position.x);
         }
-        if (transform.position.z <= -20)
+        if (transform.position.z <= -30)
         {
             transform.position = new Vector3(-8, transform.position.y, transform.position.x);
         }

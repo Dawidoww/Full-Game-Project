@@ -5,8 +5,8 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] carPrefabs;
-    private float spawnPosZRight = 60;
-    private float startDelay = 2;
+    private float spawnPosZRight = 70;
+    private float startDelay = 1;
     private float spawnInterval1 = 1.9f;
     private float spawnInterval2 = 2.3f;
     private float spawnInterval3 = 2.1f;
@@ -28,7 +28,6 @@ public class SpawnManager : MonoBehaviour
         int carIndex1 = Random.Range(0, carPrefabs.Length);
         Vector3 spawnPos1 = new Vector3(Random.Range(12, 12), 5, spawnPosZRight);
         Instantiate(carPrefabs[carIndex1], spawnPos1, carPrefabs[carIndex1].transform.rotation);
-
     }
     void SpawnRandomCar2()
     {
@@ -42,7 +41,6 @@ public class SpawnManager : MonoBehaviour
         int carIndex3 = Random.Range(0, carPrefabs.Length);
         Vector3 spawnPos3 = new Vector3(Random.Range(-3, -3), 5, spawnPosZRight);
         Instantiate(carPrefabs[carIndex3], spawnPos3, carPrefabs[carIndex3].transform.rotation);
-
     }
 
 }

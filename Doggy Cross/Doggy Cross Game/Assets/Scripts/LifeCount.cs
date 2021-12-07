@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LifeCount : MonoBehaviour
 {
     public Image[] lives;
     public int livesLeft;
+    //public string name;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,8 @@ public class LifeCount : MonoBehaviour
 
 
     }
+
+
     void OnTriggerEnter(Collider other)
     {
         gameObject.transform.position = new Vector3(-10, 4, 10);
@@ -33,6 +37,8 @@ public class LifeCount : MonoBehaviour
 
         if (livesLeft == 0)
         {
+            //load scene after losing
+            SceneManager.LoadScene("MainMenu");
             Debug.Log("Lost");
         }
     }

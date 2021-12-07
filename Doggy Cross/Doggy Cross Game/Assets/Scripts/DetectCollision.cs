@@ -14,8 +14,8 @@ public class DetectCollision : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         gameObject.transform.position = new Vector3(-10, 4, 10);
-    }
+    }*/
 }

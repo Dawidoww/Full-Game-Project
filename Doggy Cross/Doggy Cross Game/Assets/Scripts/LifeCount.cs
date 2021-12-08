@@ -26,7 +26,7 @@ public class LifeCount : MonoBehaviour
         if (livesLeft == 0)
         {
             //load scene after losing
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("TryAgain");
             Debug.Log("Lost");
         }
     }

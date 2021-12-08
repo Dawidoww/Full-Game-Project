@@ -31,10 +31,7 @@ public class LevelLoader : MonoBehaviour
         }
         else if(other.gameObject.name == "GameComplete")
         {
-            Debug.Log("Finished");
-
-            //create scene when game complete
-           // SceneManager.LoadScene("Finished");
+            SceneManager.LoadScene("Completed");
         }
     }
 }

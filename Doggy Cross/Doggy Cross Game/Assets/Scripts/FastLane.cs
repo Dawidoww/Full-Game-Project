@@ -5,7 +5,7 @@ using UnityEngine;
 public class FastLane : MonoBehaviour
 {
     public GameObject[] carPrefabs2;
-    private float spawnPosZL = -55;
+    private float spawnPosZL = -60;
     private float startDelay = 0;
     private float spawnInterval1 = 1f;
    // private float spawnInterval2 = 2f;

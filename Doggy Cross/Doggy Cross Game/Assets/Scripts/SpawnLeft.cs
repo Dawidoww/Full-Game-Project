@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnLeft : MonoBehaviour
 {
     public GameObject[] carPrefabs;
-    private float spawnPosZLeft = -50;
+    private float spawnPosZLeft = -60;
     private float startDelay = 1.5f;
     private float startDelay2 = 1;
     private float spawnInterval4 = 2.1f;
